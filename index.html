@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>DupChecker</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div style="margin: 0px 50px 0px 50px;">
+    <a href="https://www.validity.com/">
+    <img style="height:100px; width: 250px;" src="https://www.validity.com/wp-content/uploads/2019/07/ValidityDark_Smaller.svg" alt="Validity" id="logo">
+    </a>
+    <nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">DupChecker</a>
+    
+  </div>
+</nav>
+<form action="/uploadfile" enctype="multipart/form-data" method="POST">
+
+    <div class="jumbotron"  style="padding:40px;">
+      <p style="font-size: 50px">Welcome to DupeChecker BETA version!!</p>
+      <p >Please upload CSV file to check for duplicate records. Please be patient after uploading file as good things takes time to happen :)</p>
+        <p>
+            <input class="btn btn-primary btn-lg" name="csvFile" type="file" id="myFile"><br>
+            <input type="submit" class="btn btn-primary btn-lg" value="Upload a file"/>
+        </p>
+    </div>
+</form>
+  </div>
+</body>
+</html>
